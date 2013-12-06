@@ -1,0 +1,32 @@
+{
+  "name": "vmrun.js",
+  "description": "VMWare vmrun Remote API",
+  "version": "0.0.1",
+  "author": "Philipp Haussleiter <philipp@haussleiter.de>",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/phaus/vmrun.js.git"
+  },
+  "keywords": [
+    "vmware",
+    "vmrun",
+    "remote",
+    "api"
+  ],
+  "main": "./lib/vmrun",
+  "dependencies": {
+    "sync": "0.2.x",
+    "plist" : "0.4.x",
+    "properties" : "1.1.x"
+  },
+  "devDependencies": {
+    "nodeunit" : "0.7.x"
+  },
+  "scripts": {
+    "test": "nodeunit tests"
+  },
+  "engines": {
+    "node": ">= 0.1.100"
+  }
+}
