@@ -16,7 +16,6 @@
   ],
   "main": "./lib/vmrun",
   "dependencies": {
-    "sync": "0.2.x",
     "plist" : "0.4.x",
     "properties" : "1.1.x"
   },
