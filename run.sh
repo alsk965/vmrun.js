@@ -2,33 +2,33 @@
 
 var vmrun = require('./lib/vmrun');
 
-vmrun.info(function(err, data){
+vmrun.app.info(function(err, data){
 	console.log("\nvmrun.info:\n");
 	console.log(data);
 });
 
-vmrun.listAll(function(err, data){
-	console.log("\nvmrun.listAll:\n");
+vmrun.vms.all.list(function(err, data){
+	console.log("\nvmrun.vms.all.list:\n");
 	console.log(data);
 });
 
-vmrun.showAll(function(err, data){
-	console.log("\nvmrun.showAll:\n");
+vmrun.vms.all.show(function(err, data){
+	console.log("\nvmrun.vms.all.show:\n");
 	console.log(data);
 });
 
-vmrun.listRunning(function(err, data){
-	console.log("\nvmrun.listRunning:\n");
+vmrun.vms.running.list(function(err, data){
+	console.log("\nvmrun.vms.running.list:\n");
 	console.log(data);
 });
 
-vmrun.showRunning(function(err, data){
-	console.log("\nvmrun.showRunning:\n");
+vmrun.vms.running.show(function(err, data){
+	console.log("\nvmrun.vms.running.show:\n");
 	console.log(data);
 });
 
-vmrun.vminfo(0, function(err, data){
-	console.log("\nvmrun.vminfo:\n");
+vmrun.vm.info(0, function(err, data){
+	console.log("\nvmrun.vm.info:\n");
 	console.log(data);
 });
 
